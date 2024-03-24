@@ -1,0 +1,157 @@
+/* Import Poppins font using @import rule in CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --body: #ffffff00; 
+  --text-default: #fffdfd; 
+  --div-color: rgba(155, 151, 151, 0.1); 
+  --button-color: #83242d; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font with sans-serif fallback */
+  margin: 0;
+  background-image: url('image.png');
+  background-size: cover; 
+  background-position: center bottom;
+  color: var(--text-default);
+  position: relative; 
+}
+
+
+
+.overlay {
+  position: left;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 60%; 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+h1,
+label {
+  color: #000000; 
+}
+.checkbox-container {
+  display: flex;
+  align-items: center; 
+}
+
+.checkbox-container label {
+  margin-right: 10px;
+}
+.prompt-input-container {
+  background-color: var(--div-color);
+  color: var(--text-default);
+  padding: 90px;
+  border-radius: 70px;
+  max-width: 450px;
+  margin: 100px auto 20px auto; /* Set top and bottom margin to 100px and center horizontally */
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 28px; 
+  font-weight: bold; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold; 
+  color: #000000; 
+  text-align: left; 
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 8px;
+  border: 0px solid #292a28;
+  border-radius: 50px; 
+  background-color: #888888; 
+  color: var(--text-default);
+  margin-bottom: 10px;
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+input[type="text"] { 
+  background-color: #dcdcdc; 
+}
+
+button {
+  background-color: var(--button-color);
+  color: whitesmoke;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px; 
+  font-weight: bold; 
+  margin-top: 20px; 
+}
+
+
+@media screen and (max-width: 600px) {
+  .prompt-input-container {
+    max-width: 100%;
+  }
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #f5f7f4; 
+  border-radius: 50px; 
+  background-color: #8d8a8a; 
+  color: #100e0e;
+  margin-bottom: 10px;
+  font-family: 'Canva Sans', sans-serif; 
+  font-size: 14px;
+}
+
+/* Placeholder Styles */
+textarea::placeholder {
+  color: #f7f4f4; /* Placeholder color */
+  opacity: 0.5; /* Placeholder opacity */
+}
+.file-input-container {
+  width: 455px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+}
+/* Add this CSS to your existing PromptInput.css file */
+
+/* File input section */
+.dropzone {
+  background: white;
+  border-radius: 5px;
+  border: 2px dashed #83242d;
+  border-image: none;
+  max-width: 550px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropzone form {
+  padding: 20px;
+}
+
+.dropzone .dz-message {
+  text-align: center;
+  color: #000000;
+}
+
+.dropzone .dz-message span {
+  font-size: 14px;
+}
+
+.dropzone .note {
+  color: #131212;
+}
+
+/* Optional: Adjust the styling as needed */
